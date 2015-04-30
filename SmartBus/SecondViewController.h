@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ArcGIS/ArcGIS.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <AGSWebMapDelegate, UIAlertViewDelegate , AGSCalloutDelegate, AGSPopupsContainerDelegate>
+@property (weak, nonatomic) IBOutlet AGSMapView *mapView;
 
 
 @end
