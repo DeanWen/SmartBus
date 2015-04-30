@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-14" y="880"/>
         </scene>
-        <!--Map-->
+        <!--More-->
         <scene sceneID="bEz-rj-NJS">
             <objects>
-                <viewController storyboardIdentifier="FourthViewController" id="R7c-xV-gb6" userLabel="Map" customClass="FourthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FourthViewController" id="R7c-xV-gb6" userLabel="More" customClass="FourthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nCN-ol-RQ5"/>
                         <viewControllerLayoutGuide type="bottom" id="j09-nB-LhM"/>
@@ -96,7 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="More View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="paM-gi-KQu">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="More View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="paM-gi-KQu">
                                 <rect key="frame" x="215" y="238" width="170" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
@@ -105,8 +105,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="paM-gi-KQu" firstAttribute="top" secondItem="nCN-ol-RQ5" secondAttribute="bottom" constant="218" id="B8P-6I-nAc"/>
+                            <constraint firstItem="paM-gi-KQu" firstAttribute="centerX" secondItem="Z3F-za-Cc9" secondAttribute="centerX" id="nkv-xJ-iAz"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="second" id="j5r-OA-XXh" userLabel="Map"/>
+                    <tabBarItem key="tabBarItem" title="More" image="second" id="j5r-OA-XXh" userLabel="More"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXl-j8-tbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,13 +149,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hrY-xK-CZI">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hrY-xK-CZI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hrY-xK-CZI" firstAttribute="leading" secondItem="PaF-Nb-C2q" secondAttribute="leading" id="1dV-Jw-ION"/>
+                            <constraint firstItem="hrY-xK-CZI" firstAttribute="top" secondItem="PaF-Nb-C2q" secondAttribute="top" id="5TH-Kl-464"/>
+                            <constraint firstAttribute="trailing" secondItem="hrY-xK-CZI" secondAttribute="trailing" id="AIr-vi-Lt2"/>
+                            <constraint firstItem="hrY-xK-CZI" firstAttribute="bottom" secondItem="IIP-e6-I2m" secondAttribute="top" id="pZW-uM-hwk"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Near Me" image="first" id="k6T-Bf-Hv3" userLabel="More"/>
+                    <tabBarItem key="tabBarItem" title="Near Me" image="first" id="k6T-Bf-Hv3"/>
                     <connections>
                         <outlet property="MapView" destination="hrY-xK-CZI" id="hHh-Uj-BS9"/>
                     </connections>
