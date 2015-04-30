@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F91EBD01AF1A2140050E092 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBCF1AF1A2140050E092 /* main.m */; };
+		2F91EBD31AF1A2140050E092 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBD21AF1A2140050E092 /* AppDelegate.m */; };
+		2F91EBD61AF1A2140050E092 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBD51AF1A2140050E092 /* FirstViewController.m */; };
+		2F91EBD91AF1A2140050E092 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBD81AF1A2140050E092 /* SecondViewController.m */; };
+		2F91EBDC1AF1A2140050E092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F91EBDA1AF1A2140050E092 /* Main.storyboard */; };
+		2F91EBDE1AF1A2140050E092 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F91EBDD1AF1A2140050E092 /* Images.xcassets */; };
+		2F91EBE11AF1A2140050E092 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F91EBDF1AF1A2140050E092 /* LaunchScreen.xib */; };
+		2F91EBED1AF1A2150050E092 /* SmartBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBEC1AF1A2150050E092 /* SmartBusTests.m */; };
+		2F91EBF91AF1A55B0050E092 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBF71AF1A55B0050E092 /* ThirdViewController.m */; };
+		2F91EBFE1AF1A5790050E092 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBFC1AF1A5790050E092 /* FourthViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F91EBE71AF1A2150050E092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F91EBC21AF1A2140050E092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F91EBC91AF1A2140050E092;
+			remoteInfo = SmartBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F91EBCA1AF1A2140050E092 /* SmartBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F91EBCE1AF1A2140050E092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F91EBCF1AF1A2140050E092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F91EBD11AF1A2140050E092 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F91EBD21AF1A2140050E092 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F91EBD41AF1A2140050E092 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2F91EBD51AF1A2140050E092 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2F91EBD71AF1A2140050E092 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2F91EBD81AF1A2140050E092 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2F91EBDB1AF1A2140050E092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F91EBDD1AF1A2140050E092 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F91EBE01AF1A2140050E092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2F91EBE61AF1A2150050E092 /* SmartBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F91EBEB1AF1A2150050E092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F91EBEC1AF1A2150050E092 /* SmartBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartBusTests.m; sourceTree = "<group>"; };
+		2F91EBF61AF1A55B0050E092 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		2F91EBF71AF1A55B0050E092 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		2F91EBFB1AF1A5790050E092 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		2F91EBFC1AF1A5790050E092 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F91EBC71AF1A2140050E092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F91EBE31AF1A2150050E092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F91EBC11AF1A2140050E092 = {
+			isa = PBXGroup;
+			children = (
+				2F91EBCC1AF1A2140050E092 /* SmartBus */,
+				2F91EBE91AF1A2150050E092 /* SmartBusTests */,
+				2F91EBCB1AF1A2140050E092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F91EBCB1AF1A2140050E092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBCA1AF1A2140050E092 /* SmartBus.app */,
+				2F91EBE61AF1A2150050E092 /* SmartBusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F91EBCC1AF1A2140050E092 /* SmartBus */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBD11AF1A2140050E092 /* AppDelegate.h */,
+				2F91EBD21AF1A2140050E092 /* AppDelegate.m */,
+				2F91EC001AF1A7880050E092 /* FirstView */,
+				2F91EC031AF1A7AA0050E092 /* SecondView */,
+				2F91EC011AF1A7960050E092 /* ThirdView */,
+				2F91EC021AF1A7A00050E092 /* FourthView */,
+				2F91EBDA1AF1A2140050E092 /* Main.storyboard */,
+				2F91EBDD1AF1A2140050E092 /* Images.xcassets */,
+				2F91EBDF1AF1A2140050E092 /* LaunchScreen.xib */,
+				2F91EBCD1AF1A2140050E092 /* Supporting Files */,
+			);
+			path = SmartBus;
+			sourceTree = "<group>";
+		};
+		2F91EBCD1AF1A2140050E092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBCE1AF1A2140050E092 /* Info.plist */,
+				2F91EBCF1AF1A2140050E092 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F91EBE91AF1A2150050E092 /* SmartBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBEC1AF1A2150050E092 /* SmartBusTests.m */,
+				2F91EBEA1AF1A2150050E092 /* Supporting Files */,
+			);
+			path = SmartBusTests;
+			sourceTree = "<group>";
+		};
+		2F91EBEA1AF1A2150050E092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBEB1AF1A2150050E092 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F91EC001AF1A7880050E092 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBD41AF1A2140050E092 /* FirstViewController.h */,
+				2F91EBD51AF1A2140050E092 /* FirstViewController.m */,
+			);
+			name = FirstView;
+			sourceTree = "<group>";
+		};
+		2F91EC011AF1A7960050E092 /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBF61AF1A55B0050E092 /* ThirdViewController.h */,
+				2F91EBF71AF1A55B0050E092 /* ThirdViewController.m */,
+			);
+			name = ThirdView;
+			sourceTree = "<group>";
+		};
+		2F91EC021AF1A7A00050E092 /* FourthView */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBFB1AF1A5790050E092 /* FourthViewController.h */,
+				2F91EBFC1AF1A5790050E092 /* FourthViewController.m */,
+			);
+			name = FourthView;
+			sourceTree = "<group>";
+		};
+		2F91EC031AF1A7AA0050E092 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				2F91EBD71AF1A2140050E092 /* SecondViewController.h */,
+				2F91EBD81AF1A2140050E092 /* SecondViewController.m */,
+			);
+			name = SecondView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F91EBC91AF1A2140050E092 /* SmartBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F91EBF01AF1A2150050E092 /* Build configuration list for PBXNativeTarget "SmartBus" */;
+			buildPhases = (
+				2F91EBC61AF1A2140050E092 /* Sources */,
+				2F91EBC71AF1A2140050E092 /* Frameworks */,
+				2F91EBC81AF1A2140050E092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBus;
+			productName = SmartBus;
+			productReference = 2F91EBCA1AF1A2140050E092 /* SmartBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F91EBE51AF1A2150050E092 /* SmartBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F91EBF31AF1A2150050E092 /* Build configuration list for PBXNativeTarget "SmartBusTests" */;
+			buildPhases = (
+				2F91EBE21AF1A2150050E092 /* Sources */,
+				2F91EBE31AF1A2150050E092 /* Frameworks */,
+				2F91EBE41AF1A2150050E092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F91EBE81AF1A2150050E092 /* PBXTargetDependency */,
+			);
+			name = SmartBusTests;
+			productName = SmartBusTests;
+			productReference = 2F91EBE61AF1A2150050E092 /* SmartBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F91EBC21AF1A2140050E092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Dian Wen";
+				TargetAttributes = {
+					2F91EBC91AF1A2140050E092 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2F91EBE51AF1A2150050E092 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2F91EBC91AF1A2140050E092;
+					};
+				};
+			};
+			buildConfigurationList = 2F91EBC51AF1A2140050E092 /* Build configuration list for PBXProject "SmartBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F91EBC11AF1A2140050E092;
+			productRefGroup = 2F91EBCB1AF1A2140050E092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F91EBC91AF1A2140050E092 /* SmartBus */,
+				2F91EBE51AF1A2150050E092 /* SmartBusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F91EBC81AF1A2140050E092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F91EBDC1AF1A2140050E092 /* Main.storyboard in Resources */,
+				2F91EBE11AF1A2140050E092 /* LaunchScreen.xib in Resources */,
+				2F91EBDE1AF1A2140050E092 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F91EBE41AF1A2150050E092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F91EBC61AF1A2140050E092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F91EBFE1AF1A5790050E092 /* FourthViewController.m in Sources */,
+				2F91EBD91AF1A2140050E092 /* SecondViewController.m in Sources */,
+				2F91EBF91AF1A55B0050E092 /* ThirdViewController.m in Sources */,
+				2F91EBD31AF1A2140050E092 /* AppDelegate.m in Sources */,
+				2F91EBD61AF1A2140050E092 /* FirstViewController.m in Sources */,
+				2F91EBD01AF1A2140050E092 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F91EBE21AF1A2150050E092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F91EBED1AF1A2150050E092 /* SmartBusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F91EBE81AF1A2150050E092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F91EBC91AF1A2140050E092 /* SmartBus */;
+			targetProxy = 2F91EBE71AF1A2150050E092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F91EBDA1AF1A2140050E092 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F91EBDB1AF1A2140050E092 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F91EBDF1AF1A2140050E092 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F91EBE01AF1A2140050E092 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F91EBEE1AF1A2150050E092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F91EBEF1AF1A2150050E092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F91EBF11AF1A2150050E092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F91EBF21AF1A2150050E092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F91EBF41AF1A2150050E092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBus.app/SmartBus";
+			};
+			name = Debug;
+		};
+		2F91EBF51AF1A2150050E092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBus.app/SmartBus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F91EBC51AF1A2140050E092 /* Build configuration list for PBXProject "SmartBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F91EBEE1AF1A2150050E092 /* Debug */,
+				2F91EBEF1AF1A2150050E092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F91EBF01AF1A2150050E092 /* Build configuration list for PBXNativeTarget "SmartBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F91EBF11AF1A2150050E092 /* Debug */,
+				2F91EBF21AF1A2150050E092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F91EBF31AF1A2150050E092 /* Build configuration list for PBXNativeTarget "SmartBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F91EBF41AF1A2150050E092 /* Debug */,
+				2F91EBF51AF1A2150050E092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F91EBC21AF1A2140050E092 /* Project object */;
+}
