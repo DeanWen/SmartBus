@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F75B38A1AF1C309007CBF21 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F75B3891AF1C309007CBF21 /* MapKit.framework */; };
 		2F91EBD01AF1A2140050E092 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBCF1AF1A2140050E092 /* main.m */; };
 		2F91EBD31AF1A2140050E092 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBD21AF1A2140050E092 /* AppDelegate.m */; };
 		2F91EBD61AF1A2140050E092 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F91EBD51AF1A2140050E092 /* FirstViewController.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F75B3891AF1C309007CBF21 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F91EBCA1AF1A2140050E092 /* SmartBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F91EBCE1AF1A2140050E092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F91EBCF1AF1A2140050E092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F75B38A1AF1C309007CBF21 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		2F91EBC11AF1A2140050E092 = {
 			isa = PBXGroup;
 			children = (
+				2F75B3891AF1C309007CBF21 /* MapKit.framework */,
 				2F91EBCC1AF1A2140050E092 /* SmartBus */,
 				2F91EBE91AF1A2150050E092 /* SmartBusTests */,
 				2F91EBCB1AF1A2140050E092 /* Products */,
@@ -462,6 +466,7 @@
 				2F91EBF21AF1A2150050E092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F91EBF31AF1A2150050E092 /* Build configuration list for PBXNativeTarget "SmartBusTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +475,7 @@
 				2F91EBF51AF1A2150050E092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
