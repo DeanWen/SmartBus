@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6D740C44-D981-4B00-8FB6-2F72C439B980</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SmartBus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0ED757BC3EB8B1F1FFBBF99BD752765FB1391E3</key>
+		<string>github.com:DeanWen/SmartBus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SmartBus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0ED757BC3EB8B1F1FFBBF99BD752765FB1391E3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:DeanWen/SmartBus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0ED757BC3EB8B1F1FFBBF99BD752765FB1391E3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0ED757BC3EB8B1F1FFBBF99BD752765FB1391E3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SmartBus</string>
+		</dict>
+	</array>
+</dict>
+</plist>
