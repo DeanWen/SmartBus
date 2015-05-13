@@ -7,12 +7,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="stylesheet"
-href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script
-src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
-</script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 </head>
 <body>
 
@@ -35,20 +32,16 @@ src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
 			<%}; %>
 				<c:forEach var="route" items="${result}">
 					<li >${route.getRouteName()}</li>
-					<li><a href="#"> <c:forEach var="busline"
-								items="${route.getRoutes()}">
-								<h2>${busline.getBusline()}(${busline.getDuration()}) :
-									${busline.getDepartTime()}- ${busline.getArrTime()}</h2>
-								<p>
-									Departure: <b>${busline.getOriStop()}</b>
-								</p>
-								<p>
-									Arrival: <b>${busline.getOriStop()}</b>
-								</p>
-
-							</c:forEach>
+					<li><a href="#">
+					<c:forEach var="oneBus" items="${route.getRoutes()}">
+						<h2>${oneBus.getBusline()}(${oneBus.getDuration()}) : ${oneBus.getDepartTime()}- ${oneBus.getArrTime()}</h2>
+							<p>Departure: <b>${oneBus.getOriStop()}</b></p>
+							<p>Arrival: <b>${oneBus.getDestStop()}</b></p>
+					</c:forEach>
+							<p class="ui-li-aside">See the map</p>
 							<p>Overall Time: ${route.getDuration()}</p>
-					</a></li>
+					</a>
+					</li>
 				</c:forEach>
 			</ul>
 		</div>
@@ -56,9 +49,10 @@ src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="" data-icon="search">Search</a></li>
-					<li><a href="BusTransit.do" data-icon="home">Home</a></li>
-					<li><a href="" data-icon="info">Account</a></li>
+					<li><a href="" data-icon="arrow-r">From Here</a></li>
+					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
+					<li><a href="" data-icon="location">Near Me</a></li>
+					<li><a href="" data-icon="star"> Favorite</a></li>
 				</ul>
 			</div>
 		</div>

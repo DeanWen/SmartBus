@@ -33,7 +33,7 @@
 					
 
 				</div>
-				<input type="submit" data-inline="false" name="action" value="Text Search">
+				<input type="submit" data-inline="false" name="action" value="Search">
 			</form>
 			<form method="post" action="showRoutesOnMap.do">
 				<input type="submit" data-inline="false" name="action" value="Search On Map">
