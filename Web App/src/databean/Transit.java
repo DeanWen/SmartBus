@@ -19,6 +19,17 @@ public class Transit {
 	
 	private String numStops;
 	private String busline;
+	
+	private String predTime;
+	private String headSign;
+
+	public String getPredTime() {
+		return predTime;
+	}
+
+	public void setHeadSign(String headSign) {
+		this.headSign = headSign;
+	}
 
 	public String getBusline() {
 		return busline;
@@ -124,6 +135,14 @@ public class Transit {
 				+ ", startLng=" + startLng + ", destStop=" + destStop
 				+ ", endLat=" + endLat + ", endLng=" + endLng + ", numStops="
 				+ numStops + "]";
+	}
+
+	public String getHeadSign() {
+		return headSign;
+	}
+
+	public void setPredTime(String predTime) {
+		this.predTime = predTime;
 	}
 	
 }
