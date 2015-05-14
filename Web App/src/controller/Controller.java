@@ -17,7 +17,11 @@ public class Controller extends HttpServlet {
         
         Action.add(new BusTransitAction());
         Action.add(new ShowMap());
+
         Action.add(new FromHereAction());
+
+        Action.add(new nearmeAction());
+        Action.add(new predicationAction());
         
     }
 
