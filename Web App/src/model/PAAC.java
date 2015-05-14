@@ -9,14 +9,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import databean.BusStop;
-import databean.Itinerary;
 import databean.Transit;
 
 public class PAAC {
 	private final String paacKey = "key=ziU2dVzq4CCXuRJJgTaHsiz6N&format=json";
-	private final String ggmapkey = "key=AIzaSyBRqN6BsdiUVqi2MlA41WKC_TTO40Zlw30";
+	//private final String ggmapkey = "key=AIzaSyBRqN6BsdiUVqi2MlA41WKC_TTO40Zlw30";
 	private final String paacServer = "http://realtime.portauthority.org/bustime/api/v2/";
-	private final String ggmapServer = "https://maps.googleapis.com/maps/api/directions/json?mode=transit&alternatives=true";
+	//private final String ggmapServer = "https://maps.googleapis.com/maps/api/directions/json?mode=transit&alternatives=true";
 	
 	public String getTime () {
 		String method = "GET";
@@ -184,94 +183,94 @@ public class PAAC {
 	}
 
 	
-	public ArrayList<Itinerary> getTripPlan (String ori, String dst, String time, boolean isDepart) throws UnsupportedEncodingException, JSONException {
-		if (!time.isEmpty()) {
-			if (isDepart) {
-				time = "&departure_time=" + time;
-			} else {
-				time = "&arrival_time=" + time;
-			}
-		}
-		
-		if (!ori.matches("ittsburgh") && !ori.matches("ittsburgh") && !ori.matches("itts")) {
-			ori += " Pittsburgh";
-		}
-		if (!dst.matches("ittsburgh") && !dst.matches("ittsburgh") && !dst.matches("itts")) {
-			dst += " Pittsburgh";
-		}
-		
-		String url = ggmapServer + "&" + ggmapkey 
-				+ time + "&origin=" + URLEncoder.encode(ori, "UTF-8") 
-				+ "&destination=" + URLEncoder.encode(dst, "UTF-8");
-		HttpUtil hu = new HttpUtil("GET", url);
-		hu.excute();
-		
-		ArrayList<Itinerary> list = new ArrayList<Itinerary> ();
-		JSONArray routes = hu.getData().getJSONArray("routes");
-		System.out.println("Route : " + routes.length());
-		
-		for (int i = 0; i < routes.length(); ++i) {
-			JSONObject leg = routes.getJSONObject(i).getJSONArray("legs").getJSONObject(0);
-			JSONArray steps = leg.getJSONArray("steps");
-			
-			Itinerary itinerary = new Itinerary();
-
-			for (int j = 0; j < steps.length(); ++j) {
-				JSONObject step = steps.getJSONObject(j);
-				if(step.get("travel_mode").toString().equals("TRANSIT")) {
-					Transit tran = new Transit();
-					
-					tran.setDistance(step.getJSONObject("distance").getString("text"));
-					tran.setDuration(step.getJSONObject("duration").getString("text"));
-					
-					tran.setOriStop(step.getJSONObject("transit_details").getJSONObject("departure_stop").getString("name"));
-					tran.setDestStop(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getString("name"));
-					tran.setNumStops(step.getJSONObject("transit_details").get("num_stops").toString());
-					
-					tran.setDepartTime(step.getJSONObject("transit_details").getJSONObject("departure_time").getString("text"));
-					tran.setArrTime(step.getJSONObject("transit_details").getJSONObject("arrival_time").getString("text"));
-					tran.setStartLat(step.getJSONObject("transit_details").getJSONObject("departure_stop").getJSONObject("location").get("lat").toString());
-					tran.setStartLng(step.getJSONObject("transit_details").getJSONObject("departure_stop").getJSONObject("location").get("lng").toString());
-					tran.setEndLat(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getJSONObject("location").get("lat").toString());
-					tran.setEndLng(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getJSONObject("location").get("lng").toString());
-					
-					tran.setBusline(step.getJSONObject("transit_details").getJSONObject("line").getString("short_name"));
-					tran.setHeadSign(step.getJSONObject("transit_details").get("headsign").toString());
-					
-					PAAC pc = new PAAC();
-					tran.setPredTime(pc.getArrivalPrediciton(tran));
-					
-					itinerary.getRoutes().add(tran);
-				}
-			}
-			
-			if (itinerary.getRoutes().isEmpty())
-				continue;
-			
-			itinerary.setOrigin(ori);
-			itinerary.setDestination(dst);
-			itinerary.setArrTime(leg.getJSONObject("arrival_time").getString("text"));
-			itinerary.setDepartTime(leg.getJSONObject("departure_time").getString("text"));
-			itinerary.setDistance(leg.getJSONObject("distance").getString("text"));
-			itinerary.setDuration(leg.getJSONObject("duration").getString("text"));
-			itinerary.setStartAddr(leg.getString("start_address"));
-			itinerary.setEndAddr(leg.getString("end_address"));
-			itinerary.setStartLat(leg.getJSONObject("start_location").get("lat").toString());
-			itinerary.setEndLat(leg.getJSONObject("end_location").get("lat").toString());
-			itinerary.setStartLng(leg.getJSONObject("start_location").get("lng").toString());
-			itinerary.setStartLng(leg.getJSONObject("end_location").get("lng").toString());
-			
-			if (!itinerary.getRoutes().get(0).getPredTime().equals("N/A")) {
-				itinerary.setPredTime("Arrive in " + itinerary.getRoutes().get(0).getPredTime() + " min");
-			} else {
-				itinerary.setPredTime("N/A");
-			}
-			
-			list.add(itinerary);
-		}
-		
-		return list;
-	}
+//	public ArrayList<Itinerary> getTripPlan (String ori, String dst, String time, boolean isDepart) throws UnsupportedEncodingException, JSONException {
+//		if (!time.isEmpty()) {
+//			if (isDepart) {
+//				time = "&departure_time=" + time;
+//			} else {
+//				time = "&arrival_time=" + time;
+//			}
+//		}
+//		
+//		if (!ori.matches("ittsburgh") && !ori.matches("ittsburgh") && !ori.matches("itts")) {
+//			ori += " Pittsburgh";
+//		}
+//		if (!dst.matches("ittsburgh") && !dst.matches("ittsburgh") && !dst.matches("itts")) {
+//			dst += " Pittsburgh";
+//		}
+//		
+//		String url = ggmapServer + "&" + ggmapkey 
+//				+ time + "&origin=" + URLEncoder.encode(ori, "UTF-8") 
+//				+ "&destination=" + URLEncoder.encode(dst, "UTF-8");
+//		HttpUtil hu = new HttpUtil("GET", url);
+//		hu.excute();
+//		
+//		ArrayList<Itinerary> list = new ArrayList<Itinerary> ();
+//		JSONArray routes = hu.getData().getJSONArray("routes");
+//		System.out.println("Route : " + routes.length());
+//		
+//		for (int i = 0; i < routes.length(); ++i) {
+//			JSONObject leg = routes.getJSONObject(i).getJSONArray("legs").getJSONObject(0);
+//			JSONArray steps = leg.getJSONArray("steps");
+//			
+//			Itinerary itinerary = new Itinerary();
+//
+//			for (int j = 0; j < steps.length(); ++j) {
+//				JSONObject step = steps.getJSONObject(j);
+//				if(step.get("travel_mode").toString().equals("TRANSIT")) {
+//					Transit tran = new Transit();
+//					
+//					tran.setDistance(step.getJSONObject("distance").getString("text"));
+//					tran.setDuration(step.getJSONObject("duration").getString("text"));
+//					
+//					tran.setOriStop(step.getJSONObject("transit_details").getJSONObject("departure_stop").getString("name"));
+//					tran.setDestStop(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getString("name"));
+//					tran.setNumStops(step.getJSONObject("transit_details").get("num_stops").toString());
+//					
+//					tran.setDepartTime(step.getJSONObject("transit_details").getJSONObject("departure_time").getString("text"));
+//					tran.setArrTime(step.getJSONObject("transit_details").getJSONObject("arrival_time").getString("text"));
+//					tran.setStartLat(step.getJSONObject("transit_details").getJSONObject("departure_stop").getJSONObject("location").get("lat").toString());
+//					tran.setStartLng(step.getJSONObject("transit_details").getJSONObject("departure_stop").getJSONObject("location").get("lng").toString());
+//					tran.setEndLat(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getJSONObject("location").get("lat").toString());
+//					tran.setEndLng(step.getJSONObject("transit_details").getJSONObject("arrival_stop").getJSONObject("location").get("lng").toString());
+//					
+//					tran.setBusline(step.getJSONObject("transit_details").getJSONObject("line").getString("short_name"));
+//					tran.setHeadSign(step.getJSONObject("transit_details").get("headsign").toString());
+//					
+//					PAAC pc = new PAAC();
+//					tran.setPredTime(pc.getArrivalPrediciton(tran));
+//					
+//					itinerary.getRoutes().add(tran);
+//				}
+//			}
+//			
+//			if (itinerary.getRoutes().isEmpty())
+//				continue;
+//			
+//			itinerary.setOrigin(ori);
+//			itinerary.setDestination(dst);
+//			itinerary.setArrTime(leg.getJSONObject("arrival_time").getString("text"));
+//			itinerary.setDepartTime(leg.getJSONObject("departure_time").getString("text"));
+//			itinerary.setDistance(leg.getJSONObject("distance").getString("text"));
+//			itinerary.setDuration(leg.getJSONObject("duration").getString("text"));
+//			itinerary.setStartAddr(leg.getString("start_address"));
+//			itinerary.setEndAddr(leg.getString("end_address"));
+//			itinerary.setStartLat(leg.getJSONObject("start_location").get("lat").toString());
+//			itinerary.setEndLat(leg.getJSONObject("end_location").get("lat").toString());
+//			itinerary.setStartLng(leg.getJSONObject("start_location").get("lng").toString());
+//			itinerary.setStartLng(leg.getJSONObject("end_location").get("lng").toString());
+//			
+//			if (!itinerary.getRoutes().get(0).getPredTime().equals("N/A")) {
+//				itinerary.setPredTime("Arrive in " + itinerary.getRoutes().get(0).getPredTime() + " min");
+//			} else {
+//				itinerary.setPredTime("N/A");
+//			}
+//			
+//			list.add(itinerary);
+//		}
+//		
+//		return list;
+//	}
 	
 	public String getCurrAddress (double lat, double lng) throws JSONException {
 		String method = "GET";

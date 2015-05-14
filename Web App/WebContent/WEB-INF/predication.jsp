@@ -15,6 +15,7 @@
 
 	<div data-role="page" id="triplist">
 		<div data-role="header">
+			<a href="nearme.do" data-rel="back" data-icon="back">Home</a>
 			<h1>Smart Bus</h1>
 		</div>
 		<div data-role="content">
