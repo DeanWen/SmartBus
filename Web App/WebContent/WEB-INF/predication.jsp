@@ -18,21 +18,23 @@
 			<h1>Smart Bus</h1>
 		</div>
 		<div data-role="content">
-			<ul data-role="listview" data-inset="true">
  				<c:forEach var="e" items="${esti}">
-					<li>${e.getRoute()} ${e.getTime()} </li>
+ 				<ul data-role="listview" data-inset="true">
+					<li>Route:	${e.getRoute()}</li>
+					<li>Arrival:	${e.getRealTime()} </li>
+					<li>Left:	${e.getLeft()} mins</li>
+				</ul>
 				</c:forEach>
-			</ul>
+			
 		</div>
 		
 
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="" data-icon="arrow-r">From Here</a></li>
+					<li><a href="fromHere.do" data-icon="arrow-r">From Here</a></li>
 					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
-					<li><a href="" data-icon="location">Near Me</a></li>
-					<li><a href="" data-icon="star"> Favorite</a></li>
+					<li><a href="nearme.do" data-icon="location">Near Me</a></li>
 				</ul>
 			</div>
 		</div>
