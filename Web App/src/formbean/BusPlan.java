@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import org.mybeans.form.FormBean;
 
-public class TripPlanForm extends FormBean {
+public class BusPlan extends FormBean {
 	private String origin;
 	private String destination;
 	private String action;

@@ -24,7 +24,7 @@ public class HttpHelper {
 			{
 				res = client.execute(new HttpGet(url));
 			}
-			else if(method.equals("POST"))
+			else 
 			{
 				res = client.execute(new HttpPost(url));
 			}

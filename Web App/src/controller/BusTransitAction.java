@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import model.TextInfo;
 
 
@@ -12,11 +11,11 @@ import org.mybeans.form.FormBeanFactory;
 
 
 import databean.Routes;
-import formbean.TripPlanForm;
+import formbean.BusPlan;
 
 public class BusTransitAction extends Action {
-	private FormBeanFactory<TripPlanForm> formBeanFactory = FormBeanFactory
-			.getInstance(TripPlanForm.class);
+	private FormBeanFactory<BusPlan> formBeanFactory = FormBeanFactory
+			.getInstance(BusPlan.class);
 
 	public BusTransitAction() {
 	}
@@ -30,7 +29,7 @@ public class BusTransitAction extends Action {
 		request.setAttribute("errors", errors);
 
 		try {
-			TripPlanForm form = formBeanFactory.create(request);
+			BusPlan form = formBeanFactory.create(request);
 			request.setAttribute("form", form);
 
 			if (!form.isPresent()) {
@@ -47,8 +46,7 @@ public class BusTransitAction extends Action {
 			request.setAttribute("result", planList);
 			request.setAttribute("origin", form.getOrigin());
 			request.setAttribute("destination", form.getDestination());
-			
-
+		
 			return "text.jsp";
 		} catch (Exception e) {
 			errors.add(e.getMessage());
