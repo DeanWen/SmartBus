@@ -22,12 +22,9 @@
 
 	<div data-role="content">
 	
-		<label for="search-basic">Search Input:</label>
-<input type="search" name="search" id="search-basic" value="" />
+		<label for="search-basic">Where are you going?</label>
+		<input type="search" name="search" id="search-basic" value="" />
 
-	
-	
-	
 	</div>
 
 
