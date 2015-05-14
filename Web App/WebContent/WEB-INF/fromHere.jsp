@@ -43,12 +43,19 @@
 		<script type="text/javascript">
 		    $(function(){
 				$("#google-maps-example").one('pageshow',function(){
+					var myLatlng = new google.maps.LatLng(40.4433, -79.9436);
+					
 					var map = new google.maps.Map($("#map-container").get(0), {
 						zoom: 15,
 						center: new google.maps.LatLng(40.4433, -79.9436),
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					});
-
+					 var marker = new google.maps.Marker({
+					      position: myLatlng,
+					      map: map,
+					      title: 'Hello World!'
+					  });
+					 
 					$(this).on('pageshow',function(){
 						google.maps.event.trigger(map, 'resize');
 					});

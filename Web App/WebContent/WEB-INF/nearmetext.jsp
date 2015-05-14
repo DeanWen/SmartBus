@@ -7,9 +7,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<style>
+		    .ads {
+		    	width: 100%; 
+		    	height: 100%; 
+		    	padding: -5;
+			    position : absolute;
+			}
+
+</style>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body>
 
@@ -26,10 +36,10 @@
 		</div>
 		
 		<div data-role="content">
-			<div class="ui-grid-b">
-	            <div class="ui-block-a">
-	                <a href="http://shreerangpatwardhan.blogspot.in/2012/04/giant-called-google.html">
-	                    <img src="http://1.bp.blogspot.com/-GQ4s4jpyCOE/T4Zi23RtGFI/AAAAAAAAAr8/tdnhfESXJRM/s320/google+giant+face.png" />
+			<div class="ui-grid-b" class = "ads">
+	            <div class="ui-block-a" class ="ads">
+	                <a href="http://yelp.com">
+	                    <img src="http://theautosurgeon.com/images/ad245x215.gif" />
 	                </a>
 	            </div>
 	        </div>
