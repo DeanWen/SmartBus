@@ -43,7 +43,7 @@ public class BusTransitAction extends Action {
 			}
 
 			TextInfo text = new TextInfo();
-			ArrayList<Routes> planList = text.getTripPlan(form.getOrigin()+"", form.getDestination());
+			ArrayList<Routes> planList = text.getTripPlan(form.getOrigin()+", Pittsburgh"+", PA"+"", form.getDestination()+", Pittsburgh"+", PA");
 			request.setAttribute("result", planList);
 			request.setAttribute("origin", form.getOrigin());
 			request.setAttribute("destination", form.getDestination());

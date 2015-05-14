@@ -20,7 +20,7 @@
 		<div data-role="content">
 			<h3>Text guides for  ${origin} to ${ destination }</h3>
 
-			<ul data-role="listview" data-inset="true">
+			<ul data-role="listview">
 			<%ArrayList<Routes> res=(ArrayList<Routes>)request.getAttribute("result"); 
 			if(res.size()==0)
 			{
@@ -32,9 +32,9 @@
 			<%}; %>
 				<c:forEach var="route" items="${result}">
 					<li >${route.getRouteName()}</li>
-					<li><a href="#">
+					<li><a href="showMap.do" data-ajax="false">
 					<c:forEach var="oneBus" items="${route.getRoutes()}">
-						<h2>${oneBus.getBusline()}(${oneBus.getDuration()}) : ${oneBus.getDepartTime()}- ${oneBus.getArrTime()}</h2>
+						<h2>${oneBus.getBusline()} : ${oneBus.getDepartTime()}- ${oneBus.getArrTime()}</h2>
 							<p>Departure: <b>${oneBus.getOriStop()}</b></p>
 							<p>Arrival: <b>${oneBus.getDestStop()}</b></p>
 					</c:forEach>

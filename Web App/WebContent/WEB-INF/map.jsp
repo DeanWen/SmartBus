@@ -49,8 +49,7 @@
 		var directionsDisplay;
 		var directionsService = new google.maps.DirectionsService();
 		var map;
-		//var curPosition = new google.maps.LatLng(40.435862,-79.9204454);
-		//var toPosition = new google.maps.LatLng(40.44417,-79.9433918);
+	
 		<%
 			String curLat = (String)request.getAttribute("curLat");
 			String curLng = (String)request.getAttribute("curLng");
@@ -91,33 +90,24 @@
 
 		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
   </head>
   <body>
-  	<!--
-    <div id="panel">
-    <b>Mode of Travel: </b>
-    <select id="mode" onchange="calcRoute();">
-      <option value="DRIVING">Driving</option>
-      <option value="WALKING">Walking</option>
-      <option value="BICYCLING">Bicycling</option>
-      <option value="TRANSIT">Transit</option>
-    </select>
-    </div>
-     -->
+  	
     <div data-role="header">
-		<h1>Trip Planner</h1>
+		<h1>Smart Bus</h1>
 	</div>
     <div id="map-canvas" style="position: absolute; width:100%; height:100%;"></div>
     <!--<div id="directions-panel" style="position: absolute; top:550px; width:100%; height:100px;"></div>-->
     <div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="" data-icon="search">Search</a></li>
-				<li><a href="BusTransit.do" data-icon="home">Home</a></li>
-				<li><a href="" data-icon="info">Account</a></li>
+					<li><a href="" data-icon="arrow-r">From Here</a></li>
+					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
+					<li><a href="" data-icon="location">Near Me</a></li>
+					<li><a href="" data-icon="star"> Favorite</a></li>
 			</ul>
 		</div>
 	</div>

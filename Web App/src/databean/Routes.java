@@ -130,14 +130,6 @@ public class Routes {
 		return name;
 	}
 	
-	@Override
-	public String toString() {
-		return "Itinerary [origin=" + origin + ", destination=" + destination
-				+ ", arrTime=" + arrTime + ", departTime=" + departTime
-				+ ", distance=" + distance + ", duration=" + duration
-				+ ", startAddr=" + startAddr + ", endAddr=" + endAddr
-				+ ", startLat=" + startLat + ", startLng=" + startLng
-				+ ", endLat=" + endLat + ", endLng=" + endLng + ", routes="
-				+ routes + "]";
-	}
+	
+	
 }
