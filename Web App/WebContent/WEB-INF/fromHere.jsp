@@ -12,6 +12,9 @@
 		
 		<style>
 		    .fit-content, .bottom-footer {
+		    	width: 100%; 
+		    	height: 100%; 
+		    	padding: 0;
 			    position : absolute;
 			}
 		
@@ -24,6 +27,7 @@
 
 			.fit-content > div {
 				height : 100%;
+				width: 100%;
 			}
 			
 			.bottom-footer {
