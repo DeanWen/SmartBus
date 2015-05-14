@@ -103,12 +103,11 @@
     <!--<div id="directions-panel" style="position: absolute; top:550px; width:100%; height:100px;"></div>-->
     <div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
-			<ul>
-					<li><a href="" data-icon="arrow-r">From Here</a></li>
+				<ul>
+					<li><a href="fromHere.do" data-icon="arrow-r">From Here</a></li>
 					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
-					<li><a href="" data-icon="location">Near Me</a></li>
-					<li><a href="" data-icon="star"> Favorite</a></li>
-			</ul>
+					<li><a href="nearme.do" data-icon="location">Near Me</a></li>
+				</ul>
 		</div>
 	</div>
   </body>

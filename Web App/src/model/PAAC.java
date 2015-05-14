@@ -4,8 +4,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -137,8 +135,11 @@ public class PAAC {
 		JSONArray pred = message.getJSONArray("prd");
 		for (int i = 0; i < pred.length(); i++) {
 			Estimation e = new Estimation();
+			e.setDes(pred.getJSONObject(i).get("des").toString());
+			e.setRealTime(pred.getJSONObject(i).get("prdtm").toString());
+			e.setRtdir(pred.getJSONObject(i).get("rtdir").toString());
 			e.setRoute(pred.getJSONObject(i).get("rt").toString());
-			e.setTime(pred.getJSONObject(i).get("prdctdn").toString());
+			e.setLeft(pred.getJSONObject(i).get("prdctdn").toString());
 			res.add(e);
 		}
 		
@@ -350,10 +351,9 @@ public class PAAC {
 		boolean isInBound = true;
 		PAAC p = new PAAC();
 		ArrayList<BusStop> res = p.getBusStops(route, isInBound);
-//		for(BusStop bs : res) {
-//			String getTime = p.getPrediction(route, bs.getStopId());
-//			System.out.println(bs.getStopId() + ", " + bs.getStopName() + ", " + bs.getLat() + "," + bs.getLng());
-//		}
+		for(BusStop bs : res) {
+			System.out.println(bs.getStopId() + ", " + bs.getStopName() + ", " + bs.getLat() + "," + bs.getLng());
+		}
 
 		System.out.println(p.getPrediction("10914"));
 		//System.out.println(p.getPrediction(route, "10914"));
