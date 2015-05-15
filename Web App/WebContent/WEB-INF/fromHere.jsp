@@ -100,8 +100,8 @@
             <div id="map_canvas" style = "width:100%"></div>
             <input id="pac-input"></input>
             <ul data-role="listview" data-inset="true">
-				<li>Favorite <a href="BusTransit.do?fav=waterfront">Waterfront</a></li>
-				<li>History <a href="BusTransit.do?fav=Ross Park Mall">Ross Park Mall</a></li>
+				<li><h3 align="center">Favorite</h3> <a href="BusTransit.do?fav=waterfront">Waterfront</a></li>
+				<li><h3 align="center">History</h3> <a href="BusTransit.do?fav=Ross Park Mall">Ross Park Mall</a></li>
 				<li> <a href="BusTransit.do?fav=Mt Washington">Mt Washington</a></li>
 			</ul>
         </div>
