@@ -18,12 +18,18 @@
 
     <script type="text/javascript">      
     function initialize() {
+    	var myLatlng = new google.maps.LatLng(40.4433, -79.9436);
         var myOptions = {
             center: new google.maps.LatLng(40.4433, -79.9436),           
             zoom: 15,          
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };         
         var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
     }
  	</script>
  
