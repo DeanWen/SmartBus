@@ -3,6 +3,7 @@ package databean;
 import java.util.ArrayList;
 
 public class Routes {
+	
 	private String origin;
 	private String destination;
 	private String arrTime;
