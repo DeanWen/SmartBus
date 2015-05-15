@@ -17,16 +17,15 @@
 	<div data-role = "page">
 		<div data-role="header">
 			<h1>Smart Bus</h1>
-		</div>
-		
-		<div data-role="content">
-			<div  align="center">
+			<div class="ui-btn-right">
 			<select name="flip-1" id="flip-1" data-role="slider" >
 				<option value="Text">Text</option>
 				<option value="Map">Map</option>
 			</select> 
 			</div>
-			
+		</div>
+		
+		<div data-role="content">			
 			<ul data-role="listview" data-inset="true">
 				<c:forEach var="bus" items="${BusStops}">
 					<li ><a href= "predication.do?stopid=${bus.stopId}">${bus.getStopName()}</a></li>
