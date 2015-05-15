@@ -90,25 +90,16 @@
 
 		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
   	
     <div data-role="header">
+    	<a href="BusTransit.do" data-rel="back" data-icon="back">Back</a>
 		<h1>Smart Bus</h1>
 	</div>
     <div id="map-canvas" style="position: absolute; width:100%; height:100%;"></div>
-    <!--<div id="directions-panel" style="position: absolute; top:550px; width:100%; height:100px;"></div>-->
-    <div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-				<ul>
-					<li><a href="fromHere.do" data-icon="arrow-r">From Here</a></li>
-					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
-					<li><a href="nearme.do" data-icon="location">Near Me</a></li>
-				</ul>
-		</div>
-	</div>
-  </body>
-</html>
+
+<jsp:include page="bottom.jsp" />

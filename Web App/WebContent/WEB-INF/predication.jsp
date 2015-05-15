@@ -7,6 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -15,7 +16,7 @@
 
 	<div data-role="page" id="triplist">
 		<div data-role="header">
-			<a href="nearme.do" data-rel="back" data-icon="back">Home</a>
+			<a href="nearme.do" data-rel="back" data-icon="back">Back</a>
 			<h1>Smart Bus</h1>
 		</div>
 		<div data-role="content">
@@ -30,16 +31,4 @@
 		</div>
 		
 
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="fromHere.do" data-icon="arrow-r">From Here</a></li>
-					<li><a href="BusTransit.do" data-icon="navigation">Navigation</a></li>
-					<li><a href="nearme.do" data-icon="location">Near Me</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-</body>
-</html>
+<jsp:include page="bottom.jsp" />

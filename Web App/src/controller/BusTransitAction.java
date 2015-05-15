@@ -25,6 +25,10 @@ public class BusTransitAction extends Action {
 	}
 
 	public String perform(HttpServletRequest request) {
+		if(request.getAttribute("result") != null) {
+			return "text.jsp";
+		}
+		
 		List<String> errors = new ArrayList<String>();
 		request.setAttribute("errors", errors);
 

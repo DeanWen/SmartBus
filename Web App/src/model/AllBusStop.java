@@ -1,5 +1,4 @@
 package model;
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,10 +10,11 @@ import databean.BusStop;
 public class AllBusStop {
 	
 	private final static String filename = "https://s3.amazonaws.com/3.3/task/stops.txt";
+	private final static double lat = 40.4433;
+	private final static double lng = -79.9436;
 	
 	public ArrayList<BusStop> getAllBusStops() throws MalformedURLException {
 		ArrayList<BusStop> list = new ArrayList<BusStop>();
-		File file = new File(filename);
 		Scanner scanner = null;
 		URL url = new URL(filename);
 		int line = 0;
@@ -27,7 +27,6 @@ public class AllBusStop {
 				if(line == 1) continue;
 				
 				String[] inputArray = input.split(",");
-				
 				
 				for(int i = 0; i < inputArray.length; i++) {
 					String stopId = inputArray[1].trim();
@@ -82,8 +81,6 @@ public class AllBusStop {
 	
 	public ArrayList<BusStop> getNearByStops() throws JSONException, MalformedURLException {
 		ArrayList<BusStop> list = new AllBusStop().getAllBusStops();
-		double lat = 40.4433;
-		double lng = -79.9436;
 		HashMap<String, BusStop> nearBy = new HashMap<String, BusStop>();
 		for(int i = 0; i < list.size(); i++) {
 			BusStop bs = list.get(i);
