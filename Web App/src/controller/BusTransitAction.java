@@ -38,10 +38,10 @@ public class BusTransitAction extends Action {
 			String fav = request.getParameter("fav").trim();
 			TextInfo text = new TextInfo();
 			try {
-				ArrayList<Routes> planList = text.getTripPlan("CMU,Pittsburgh, PA", "Waterfront, Pittsburgh, PA");
+				ArrayList<Routes> planList = text.getTripPlan("CMU,Pittsburgh, PA", fav);
 				request.setAttribute("result", planList);
 				request.setAttribute("origin", "CMU,Pittsburgh, PA");
-				request.setAttribute("destination", "Waterfront, Pittsburgh, PA");
+				request.setAttribute("destination", fav);
 			} catch (UnsupportedEncodingException | JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
