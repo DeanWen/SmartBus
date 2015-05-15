@@ -127,15 +127,7 @@ public class Transit {
 		this.numStops = numStops;
 	}
 
-	@Override
-	public String toString() {
-		return "Transit [departTime=" + departTime + ", arrTime=" + arrTime
-				+ ", distance=" + distance + ", duration=" + duration
-				+ ", oriStop=" + oriStop + ", startLat=" + startLat
-				+ ", startLng=" + startLng + ", destStop=" + destStop
-				+ ", endLat=" + endLat + ", endLng=" + endLng + ", numStops="
-				+ numStops + "]";
-	}
+	
 
 	public String getHeadSign() {
 		return headSign;
