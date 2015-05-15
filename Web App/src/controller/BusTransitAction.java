@@ -1,13 +1,22 @@
 package controller;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+
 import model.TextInfo;
 
 
+
+
+
+import org.json.JSONException;
 import org.mybeans.form.FormBeanFactory;
+
+
+
 
 
 import databean.Routes;
@@ -25,10 +34,20 @@ public class BusTransitAction extends Action {
 	}
 
 	public String perform(HttpServletRequest request) {
-		if(request.getAttribute("result") != null) {
+		if(request.getParameter("fav") != null) {
+			String fav = request.getParameter("fav").trim();
+			TextInfo text = new TextInfo();
+			try {
+				ArrayList<Routes> planList = text.getTripPlan("CMU,Pittsburgh, PA", "Waterfront, Pittsburgh, PA");
+				request.setAttribute("result", planList);
+				request.setAttribute("origin", "CMU,Pittsburgh, PA");
+				request.setAttribute("destination", "Waterfront, Pittsburgh, PA");
+			} catch (UnsupportedEncodingException | JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			return "text.jsp";
 		}
-		
 		List<String> errors = new ArrayList<String>();
 		request.setAttribute("errors", errors);
 
