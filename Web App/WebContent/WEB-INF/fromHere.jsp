@@ -43,6 +43,8 @@
             <div id="map_canvas" style = "width:100%"></div>
             <ul data-role="listview" data-inset="true">
 				<li>Favorite <a href="BusTransit.do?fav=waterfront">Waterfront</a></li>
+				<li>History <a href="BusTransit.do?fav=waterfront">Ross Park Mall</a></li>
+				<li> <a href="BusTransit.do?fav=waterfront">Mt Washington</a></li>
 			</ul>
         </div>
 
