@@ -20,9 +20,16 @@
 		</div>
 		
 		<div data-role="content">
+			<div  align="center">
+			<select name="flip-1" id="flip-1" data-role="slider" >
+				<option value="Text">Text</option>
+				<option value="Map">Map</option>
+			</select> 
+			</div>
+			
 			<ul data-role="listview" data-inset="true">
 				<c:forEach var="bus" items="${BusStops}">
-					<li ><a href= "predication.do?stopid=${bus.stopId}">${bus.getStopId()} ${bus.getStopName()}</a></li>
+					<li ><a href= "predication.do?stopid=${bus.stopId}">${bus.getStopName()}</a></li>
 				</c:forEach>
 			</ul>
 			
